@@ -1,4 +1,4 @@
-package entities;
+package application;
 
 
 import java.util.Scanner;
@@ -35,7 +35,7 @@ public class Member {
         System.out.print("Please enter the admin password:");
         password = input.nextLine();
 
-        if(password.equals("abcd")){
+        if(!password.equals("abcd")){
             System.out.println("Invalid Password. You do not have authority to edit discount.");
         }
         else {
