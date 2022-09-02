@@ -3,7 +3,7 @@ package application;
 
 import java.util.Scanner;
 
-public class Member {
+abstract public class Member {
 
 
 
@@ -51,9 +51,7 @@ public class Member {
         System.out.println("Annual Fee: " + annualFee);
     }
 
-    public void calculateAnnualFee(){
-        annualFee = 0;
-    }
+    abstract public void calculateAnnualFee();
 
 
 }
